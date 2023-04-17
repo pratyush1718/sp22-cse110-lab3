@@ -2,12 +2,51 @@
 <html lang="en">
   <head>
     <title>my site</title>
+    <meta name="description">
+    <link rel="icon" type="image/png" href="screenshots\headshot.jpg"/>
   </head>
   <body>
+    <nav>
+      <a href="screenshots\headshot.jpg">DONT CLICK</a>
+    </nav>
+
+  <form>
+    <fieldset>
+    <input type="text" name="fname" placeholder="first name:" required>
+      <label for="lname">LastName</label>
+     <input type="text" name="lname" placeholder="last name:" required>
+    </fieldset>
+  </form>
+
+  <textarea id="textarea" name="textarea" rows="4" cols="50">
+    edit this!
+  </textarea>
+
+  <br>
+  <label for="list">Choose how cool you are here:</label>
+  <input list="list" name="list" id="inputList">
+  <datalist id="list">
+    <option value="very cool">
+    <option value="not cool at all">
+  </datalist>
+
+  <br>
+  <label for="subjects">Choose which subject is your favorite:</label>
+  <select name="subjects" id="subjects">
+    <option value="math">math</option>
+    <option value="physics">physics</option>
+    <option value="chemistry">chemistry</option>
+    <option value="computer science">computer science</option>
+  </select>
+
+  <button type="button">DO NOT CLICK</button>
+
   <h1>Pratyush's Brainstorm Session</h1>
+  <hr>
   <h2>This is a serious brain storming session</h2>
   <h3>4/12/2023</h3>
 
+  <main>
   <h2>Here is the attendance list:</h2>
   <ol>    
     
@@ -17,20 +56,35 @@
 
     </ol>
 
-    <b>Today's Agenda:</b>
-   <p>This meeting will cover the basics of HTML. For the first 15 minutes, we will di
-    scuss the importance of HTML on the web. Next, we will discuss the idea of tags, and finally
-    we'll cover div's and the importance of section-ing.
-   </p>
+  <h2>Here is who is missing:</h2>
+  <details>
+    <summary>expand</summary>
+  <ul>    
+    
+    <li>Vasil</li>
+    <li>Damian</li>
+    <li>Sid</li>
 
+  </ul>
+</details>
+
+    <section>
+      <b>Today's Agenda:</b>
+    <p><span>This</span> meeting will cover the basics of HTML. For the first 15 minutes, we will di
+      scuss the importance of HTML on the web. Next, we will discuss the idea of tags, and finally
+      we'll cover div's and the importance of section-ing.
+    </p>
+  </section>
    <b>Unfinished:</b>
-   <p>Last week, we talked about CSS and how it is used for styling. However,
-    we forgot to cover how that mixes with HTML, we'll briefly go over that today.
+   <p>Last week, we talked about <strong>CSS</strong> and how it is used for styling. However,
+    we forgot to cover how that mixes with <i>HTML</i>, we'll briefly go over that today.
    </p>
 
    <b>New Business:</b>
-   <p>HTML as a whole is a new language we haven't covered before. We will cover everything
+   <p>HTML as a whole is a new language we haven't <em>covered before</em>. We will cover everything
     from importance to basic syntax to good practice.
+    <br>
+    Are you <br>excited?
    </p>
 
    <b>Relevant HTML Diagrams:</b>
@@ -52,7 +106,9 @@
        </audio>
    </div>
    
+  </main>
 
+  <footer>Created by Pratyush Chand</footer>
    
    
   </body>
