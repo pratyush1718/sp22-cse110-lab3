@@ -10,7 +10,13 @@ h1 {
     position: relative;
 }
 
-h2 {
+/* universal selector */
+* {
+    background-color: #f4f0f0;
+  }
+
+/*selector list*/
+h2, h3 {
     height:1cm;
     width: 500mm;
     max-width: 100%;
@@ -26,6 +32,7 @@ li {
     position: sticky;
 }
 
+/*Element Selector*/
 summary {
     margin-top: 5px;
     margin-bottom: 50px;
@@ -37,6 +44,7 @@ summary {
     padding-right:2px;
 }
 
+/*Pseudo-class Selector*/
 button:hover{
     background-color: greenyellow
 }
@@ -46,7 +54,8 @@ b:active {
     padding: 2px 2px 2px 2px;
 }
 
-div {
+/*Class selector*/
+.images {
     margin:auto;
     border-style: solid;
     border-color: #ccc;
@@ -68,14 +77,45 @@ div {
     grid-template-columns: 0% 40% 0px 55%;
 }
 
+/* attribute selector */
+li[class="a"] {
+
+    background-color:black;
+    width: 100%;
+  
+}
+
+/*ID Selector*/
 #audio1 {
     grid-column: 4;
     grid-row: 1
 }
 
-#audio2 {
+/*descendant combinator*/
+
+form fieldset p {
+    color:rgb(168, 170, 34)
+}
+
+/*Child combinator*/
+div > audio {
     grid-column: 4;
     grid-row: 2
+}
+
+/*Adjacent Sibling combinator*/
+br + p {
+    color:rgb(15, 15, 18)
+}
+
+/*General Sibling combinator*/
+b ~ p {
+    color:rgb(149, 99, 125)
+}
+
+/*Combining Selectors*/
+ul > li[class="a"] {
+    color:rgb(5, 84, 58)
 }
 
 @media only screen and (max-width: 500px) {
